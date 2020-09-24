@@ -1,0 +1,1 @@
+="update Pedido set EnvioNro=" & B2 & " where Pedido.Vecine='" & C2 & "' and Entrega='" & $E$1 & "' and Local='Av. Gral. Benjamín Victorica 2642' "

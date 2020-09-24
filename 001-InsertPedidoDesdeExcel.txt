@@ -1,0 +1,1 @@
+="insert Pedido (PedidoNro, Entrega, Vecine, Email, Telefono, DomicilioEnvio, Comuna, Local, Producto, Cantidad, Precio, Importe, Convenio, EnvioNro) values (" & A2 & ", '" & $N$1 & "', '" & B2  & "', '" & C2  & "', '" & D2  & "', '" & E2  & "', " & SI(F2="-";0;F2)  & ", '" & G2  & "', '" & H2  & "', " & I2  & ", " & J2  & ", " & K2 & ", '" & L2 & "', " & SI(E2=""; 1000; 0) & ")"
