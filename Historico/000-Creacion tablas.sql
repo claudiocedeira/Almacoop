@@ -18,6 +18,7 @@ CREATE TABLE [dbo].[Pedido](
 	[Importe] [numeric](17,2) NOT NULL,
 	[Convenio] [varchar](128) NOT NULL,
 	[EnvioNro] [int] NOT NULL,
+	[CantidadFaltante] [int] NOT NULL,
  CONSTRAINT [PK_Pedido] PRIMARY KEY CLUSTERED 
 (
 	[PedidoId] ASC

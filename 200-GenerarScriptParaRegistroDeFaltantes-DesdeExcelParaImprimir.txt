@@ -1,0 +1,4 @@
+Columna L de la "Planilla para imprimir" de la entrega
+
+=SUSTITUIR(EXTRAE(CELDA("filename");HALLAR("[";CELDA("filename"))+1; HALLAR("]";CELDA("filename"))-HALLAR("[";CELDA("filename"))-1); ".xlsx"; "")
+=SI(J2="";"";SI(IZQUIERDA(J2;1)="-";"update Pedido set CantidadFaltante=" & -J2 & " where Entrega='" & $L$1 & "' and Vecine='" & C2 & "' and Producto='" & G2 & "' ";SI(J2="x";"update Pedido set CantidadFaltante=" & E2& " where Entrega='" & $L$1 & "' and Vecine='" & C2 & "' and Producto='" & G2 & "' ";"")))
