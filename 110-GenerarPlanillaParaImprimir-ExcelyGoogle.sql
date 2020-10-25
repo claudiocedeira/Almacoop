@@ -1,5 +1,5 @@
 declare @FechaEntrega datetime;
-set @FechaEntrega='20201010'
+set @FechaEntrega='20201024'
 select case when Pedido.DomicilioEnvio <> '' then 'DOMICILIO' else 'LOCAL' end as TipoDespacho, Pedido.EnvioNro, Pedido.Vecine, '2' as TipoReg, 
 Convert(varchar(10), Pedido.Cantidad) as Q, case when Donacion.Cantidad is null then '' else 'dona ' + Convert(varchar(3), Donacion.Cantidad) end as DONA, Pedido.Producto, Convert(varchar(10), Convert(int, Pedido.Precio)) as 'P.U.', Convert(varchar(10), Convert(int, Pedido.Importe)) as Imp, '' as Total
 from Pedido 

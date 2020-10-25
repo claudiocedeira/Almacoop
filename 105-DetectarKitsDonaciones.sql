@@ -1,6 +1,6 @@
 /* DONACIONES P.CHAS */
 declare @FechaEntrega datetime;
-set @FechaEntrega='20201010'
+set @FechaEntrega='20201024'
 select Vecine, Cantidad, Producto from Pedido 
 where Local='Av. Gral. Benjamín Victorica 2642' and Entrega=@FechaEntrega and Producto like '%kit dona%'
 /* TOTAL KITS DONACIONES */
